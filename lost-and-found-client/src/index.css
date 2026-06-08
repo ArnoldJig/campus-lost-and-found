@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: rgba(200,191,168,0.9);
+  color: #2C1F0E;
+  line-height: 1.6;
+}
+
+body.dark {
+  background-color: rgba(26,22,16,0.95);
+  color: #E8D8C0;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+button { cursor: pointer; }
+a { text-decoration: none; color: inherit; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: rgba(200,191,168,0.5); }
+::-webkit-scrollbar-thumb { background: #D4845A; border-radius: 3px; }
+
+body.dark ::-webkit-scrollbar-track { background: rgba(26,22,16,0.8); }
+body.dark ::-webkit-scrollbar-thumb { background: #D4845A; }
+
+::placeholder { color: #A8906A; }
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #D4845A !important;
+  box-shadow: 0 0 0 3px rgba(212,132,90,0.15);
+}
